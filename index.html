@@ -1,58 +1,82 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Jowe Boy&apos;s Website</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-	</head>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>SOFIA GUTIERREZ - AT</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
 
-	<body>
-		<header>
-			<div class="row">
-				<div class="logo">
-					<img src="assets/logo-new.png" alt="oe_logo">
-				</div>
-				<ul class="main-nav">
-					<li class="active"><a href="">HOME</a></li>
-					<li><a href="">SERVICES</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">BLOG</a></li>
-					<li><a href="">CONTACT</a></li>
-					<li><a href="">FAQ</a></li>
+<body>
+	<header>
+		<div class="row">
+			<div class="logo-texto">
+				<h2>CAPA OCHO</h2>
+			</div>
+			<ul class="main-nav">
+				<li class="active"><a href="#">INICIO</a></li>
+				<li><a href="#">SOBRE ENTORNO</a></li>
+				<li><a href="#">MANUAL</a></li>
+				<li><a href="#">PREGUNTAS</a></li>
+				<li><a href="#">CONTACTO</a></li>
+			</ul>
+		</div>
+		<div class="hero">
+			<h1>ENTORNO DE DESARROLLO DEL EQUIPO</h1>
+			<p class="hero-sub">Este sitio tiene como fin brindar información sobre el entorno de desarrollo del equipo de la empresa.</p>
+		</div>
+	</header>
+	
+
+	<section class="service grid-container">
+		<div class="grid-item">
+			<h2 class="section-title">¿Qué es un entorno de desarrollo?</h2>
+			<p class="section-text">
+				Un entorno de desarrollo es el conjunto de herramientas, configuraciones y tecnologías que permiten a los desarrolladores crear, probar y mantener aplicaciones de software. 
+				<br><br>En nuestro equipo, se utiliza un entorno personalizado que incluye editores de código, servidores locales, gestores de versiones y otros recursos que facilitan el trabajo colaborativo.
+			</p>
+		</div>
+	</section>
+
+	<section class="about grid-container">
+		<div class="grid-item">
+			<h2 class="section-title">Manual de Procedimiento</h2>
+			<p class="section-text">
+				El Manual de Procedimiento correspondiente se encuentra en la entrega realizada dentro del Aula Virtual de la materia. 
+				<br><br>Allí encontrarás una guía completa para la correcta configuración y uso del entorno de desarrollo, según los lineamientos del equipo de trabajo.
+			</p>
+		</div>
+	</section>
+
+	<section class="faq">
+		<div class="grid-container">
+			<div class="grid-item faq-box">
+				<h2 class="faq-title">Preguntas Frecuentes</h2>
+				<ul class="faq-list">
+					<li><strong>¿Qué editor se recomienda usar?</strong> Visual Studio Code, por su integración con Git y facilidad de uso.</li>
+					<li><strong>¿Cómo clono el repositorio del equipo?</strong> Desde GitHub, usando HTTPS o SSH, según la configuración.</li>
+					<li><strong>¿Qué hago si tengo errores al compilar?</strong> Revisar dependencias, rutas y versiones del entorno.</li>
 				</ul>
 			</div>
-			<div class="hero">
-				<h1>Ready for Action?</h1>
-				<div class="button">
-					<a href="" class="btn btn-one">Watch Video</a>
-					<a href="" class="btn btn-two">Explore More</a>
-				</div>
-			</div>
-		</header>
-		<section class="service grid-container">
-		</section>
-		<section class="about grid-container">
-		</section>
-		<section class="blog grid-container">
-		</section>
-		<section class="contact grid-container">
-			<div class="contact-form grid-item">
-				<div class="contact-section-header">
-					<h2>Get in touch with us!</h2>
-				</div>
-				<form class="form">
-					<input type="text" name="fullname" placeholder="Fullname">
-					<input type="email" name="email" placeholder="Email Address">
-					<input type="number" name="phonenumber" placeholder="Phone Number">
-					<textarea class="subject" name="subject" placeholder="Your subject here..."></textarea>
-					<input class="button" type="submit" value="Submit">
-				</form>
-			</div>
-			<div class="contact-form grid-item">
-			</div>
-		</section>
-		<section class="faq grid-container">
-		</section>
-	</body>
+		</div>
+	</section>
 
+	<section class="contact grid-container">
+		<div class="contact-form grid-item">
+			<div class="contact-section-header">
+				<h2>Formulario de Consultas</h2>
+			</div>
+			<form class="form">
+				<input type="text" name="fullname" placeholder="Nombre completo">
+				<input type="email" name="email" placeholder="Correo electrónico">
+				<input type="number" name="phonenumber" placeholder="Teléfono">
+				<textarea class="subject" name="subject" placeholder="Escribí tu duda..."></textarea>
+				<input class="button" type="submit" value="Enviar">
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<p>Entorno configurado por Sofía Gutiérrez para la actividad de Computación en la Nube</p>
+	</footer>
+</body>
 </html>

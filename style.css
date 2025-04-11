@@ -8,10 +8,11 @@ body {
 }
 
 header {
-	background-image: url(assets/banner-bg.jpg);
+	background-image: url(assets/banner-bg.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
+	position: relative;
 }
 
 .main-nav {
@@ -56,6 +57,7 @@ header {
 	position: absolute;
 	top: 100px;
 	width: 100%;
+	text-align: center;
 }
 
 h1 {
@@ -63,76 +65,86 @@ h1 {
 	color: white;
 	text-transform: uppercase;
 	font-size: 70px;
-	text-align: center;
 	margin-top: 300px;
 }
 
-.button {
+.hero-sub {
+	color: #f0f0f0;
+	font-size: 20px;
 	text-align: center;
-	margin-top: 50px;
-}
-
-.btn {
-	font-family: "Roboto", sans-serif;
-	border: 1px solid white;
-	padding: 10px 30px;
-	color: white;
-	margin-right: 5px;
-	font-size: 13px;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-.btn-one {
-	background-color: darkorange;
-}
-
-.btn-two:hover {
-	background-color: darkorange;
-	transition: all 0.2s ease-in;
+	margin-top: 20px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	border-radius: 8px;
 }
 
 .grid-container {
 	display: grid;
-  	grid-template-columns: auto auto;
-  	padding: 10px;
+	grid-template-columns: auto;
+	padding: 50px;
 }
 
 .grid-item {
 	padding: 20px;
+	max-width: 800px;
+	margin: auto;
+}
+
+.section-title {
+	font-size: 32px;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.section-text {
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 1.6;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.faq-list {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 1.6;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 20px;
+	border-radius: 10px;
+	list-style-type: square;
 }
 
 .service {
-	background-image: url(assets/img-banner@2x.png);
+	background-image: url(assets/img-banner@2x.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 }
 
 .about {
-	background-image: url(assets/DSC_0036.JPG);
+	background-image: url(assets/puntos.avif);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 }
 
 .blog {
-	background-image: url(assets/banner-texture@2x.png);
+	background-image: url(assets/puntos.avif);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
-
 }
 
 .contact {
-	background-image: url(assets/img-contact-form-bg.jpg);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-}
-
-.faq {
-	background-image: url(assets/img-prop-type@2x.jpg);
+	background-image: url(assets/formulario.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -145,7 +157,7 @@ h1 {
 }
 
 .contact-section-header {
-	color: #282828;
+	color: #ffffff;
 	font-family: "Roboto", sans-serif;
 	font-size: 25px;
 	margin-bottom: 20px;
@@ -164,38 +176,116 @@ h1 {
 }
 
 .form input.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    width: 71%;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
- }
+	background-color: #4084d1;
+	border: none;
+	color: white;
+	width: 71%;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
 
 input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
- }
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
 
- .subject {
- 	height: 150px;
- 	color: black;
- }
+.subject {
+	height: 150px;
+	color: black;
+}
+
+footer {
+	text-align: center;
+	background-color: #222;
+	color: #fff;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.logo-texto {
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.logo-texto h2 {
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+/* Ajustamos la posición de los textos hero */
+.hero {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+
+.faq {
+	background-image: url(assets/puntos.avif);
+	background-size: cover;
+	background-position: center;
+	padding: 60px 0;
+}
+
+.faq-box {
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0, 255, 128, 0.4);
+	transition: transform 0.3s ease;
+}
+
+.faq-box:hover {
+	transform: scale(1.02);
+}
+
+.faq-title {
+	font-size: 36px;
+	color: #00ff88;
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 1px 1px 5px black;
+}
+
+.faq-list {
+	list-style: none;
+	padding-left: 0;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+.faq-list li {
+	margin-bottom: 15px;
+}
+
+.faq-list strong {
+	color: #00ffcc;
+}
+
+
 
 @media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-  	.blog {
-    	background-image: url(assets/banner-texture@2x.png) !important;
-  	}
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.blog {
+		background-image: url(assets/banner-texture@2x.png) !important;
+	}
 
-  	.faq {
-    	background-image: url(assets/img-prop-type@2x.jpg) !important;
-  	}
+	.faq {
+		background-image: url(assets/img-prop-type@2x.jpg) !important;
+	}
 }
